@@ -100,57 +100,93 @@ img {
     border-color: var(--color-white);
 
 }
-.btn-primary{
+
+.btn-primary {
     background: var(--color-danger);
     color: var(--color-white);
 }
+
 /* NAVBAR */
- nav{
-   
+nav {
+
     width: 100vw;
-    height:  5rem;
+    height: 5rem;
     position: fixed;
     top: 0;
     z-index: 11;
- }
- .nav_container{
+}
+
+.nav_container {
     height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
- }
- nav button{
+}
+
+nav button {
     display: none;
- }
- .nav_menu{
+}
+
+.nav_menu {
     display: flex;
     align-items: center;
-    gap:4rem;
- }
- .nav_menu a{
-    font-size:0.9rem;
+    gap: 4rem;
+}
+
+.nav_menu a {
+    font-size: 0.9rem;
     transition: var(--transition);
- }
- .nav_menu a:hover{
+}
+
+.nav_menu a:hover {
     color: var(--color-bg2);
- }
- /* ***header*** */
- header{
+}
+
+/* ***header*** */
+header {
     position: relative;
     top: 5rem;
     overflow: hidden;
     height: 70vh;
     margin-bottom: 5rem;
 
- }
- .header_container{
+}
+
+.header_container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
     gap: 5rem;
     height: 100%;
- }
- .header_left p{
+}
+
+.header_left p {
     margin: 1rem 0 2.4rem;
 
- }
+}
+
+.categories {
+    background: var(--color-bg1);
+}
+
+.categories h1 {
+    line-height: 1;
+    margin-bottom: 3rem;
+
+}
+
+.categories_container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 4rem;
+
+}
+
+.categories_left p {
+    margin: 1rem 0 3rem;
+}
+
+.categories_right {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
