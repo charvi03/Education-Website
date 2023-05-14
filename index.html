@@ -12,6 +12,10 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
   />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+  />
   <body>
     <!-- ***********NAVBAR********** -->
     <nav>
@@ -332,10 +336,10 @@
       </div>
     </section>
     <!-- end of faqs -->
-    <section class="container testimonials_container">
+    <section class="container testimonials_container mySwiper">
       <h2>Student's Testimonials</h2>
-      <div>
-        <article class="testimonial">
+      <div class="swiper-wrapper">
+        <article class="testimonial swiper-slide">
           <div class="avatar">
             <img src="./images/Avatar-Profile-PNG-Photos.png" alt="avtar" />
           </div>
@@ -350,7 +354,7 @@
             </p>
           </div>
         </article>
-        <article class="testimonial">
+        <article class="testimonial swiper-slide">
           <div class="avatar">
             <img src="./images/Avatar-Profile-PNG-Photos.png" alt="avtar" />
           </div>
@@ -365,7 +369,7 @@
             </p>
           </div>
         </article>
-        <article class="testimonial">
+        <article class="testimonial swiper-slide">
           <div class="avatar">
             <img src="./images/Avatar-Profile-PNG-Photos.png" alt="avtar" />
           </div>
@@ -380,7 +384,7 @@
             </p>
           </div>
         </article>
-        <article class="testimonial">
+        <article class="testimonial swiper-slide">
           <div class="avatar">
             <img src="./images/Avatar-Profile-PNG-Photos.png" alt="avtar" />
           </div>
@@ -395,7 +399,37 @@
             </p>
           </div>
         </article>
-        <article class="testimonial">
+        <article class="testimonial swiper-slide">
+          <div class="avatar">
+            <img src="./images/Avatar-Profile-PNG-Photos.png" alt="avtar" />
+          </div>
+          <div class="testimonial_info">
+            <h5>Charvi</h5>
+            <small>Web Developer</small>
+          </div>
+          <div class="testimonial_body">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
+              laboriosam ab! Nemo temporibus ipsum mollitia debitis facilis!
+            </p>
+          </div>
+        </article>
+        <article class="testimonial swiper-slide">
+          <div class="avatar">
+            <img src="./images/Avatar-Profile-PNG-Photos.png" alt="avtar" />
+          </div>
+          <div class="testimonial_info">
+            <h5>Charvi</h5>
+            <small>Web Developer</small>
+          </div>
+          <div class="testimonial_body">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
+              laboriosam ab! Nemo temporibus ipsum mollitia debitis facilis!
+            </p>
+          </div>
+        </article>
+        <article class="testimonial swiper-slide">
           <div class="avatar">
             <img src="./images/Avatar-Profile-PNG-Photos.png" alt="avtar" />
           </div>
@@ -411,8 +445,84 @@
           </div>
         </article>
       </div>
+      <div class="swiper-pagination"></div>
     </section>
+<!-- footer section -->
+
+    <footer class="footer">
+      <div class="container footer_container">
+        <div class="footer_1">
+          <a href="index.html" class="footer_logo"><h4>EDUMOTO</h4></a>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero,
+            aliquam.
+          </p>
+        </div>
+        <div class="footer_2">
+          <h4>Permalinks</h4>
+          <ul class="permalinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer_3">
+          <h4>Privacy</h4>
+          <ul class="privacy">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms and Conditions</a></li>
+            <li><a href="#">Refund Policy</a></li>
+          </ul>
+        </div>
+
+        <div class="footer_4">
+          <h4>Contact Us</h4>
+          <div>
+            <p>+91 123456789</p>
+            <p>ck@gmail.com</p>
+          </div>
+
+          <ul class="footer_socials">
+            <li>
+              <a href="#"
+                ><i class="fa fa-facebook" aria-hidden="true"></i></i
+              ></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer_copyright">
+          <small> Copyright &copy; EDUMOTO</small>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
     <script src="/main.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        //when window width>=600
+        breakpoints: {
+          600: {
+            slidesPerView: 2,
+          },
+        },
+      });
+    </script>
   </body>
 </html>

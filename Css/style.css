@@ -289,28 +289,34 @@ header {
     font-size: 1rem;
     line-height: 2.2;
 }
-.faq_icon{
+
+.faq_icon {
     align-self: flex-start;
     font-size: 1.2rem;
-   }
-.faq p{
+}
+
+.faq p {
     margin-top: 0.8rem;
     display: none;
 }
-.faq.open p{
+
+.faq.open p {
     display: block;
 }
+
 /* testimonials */
 
-.testimonials_container{
+.testimonials_container {
     overflow: hidden;
     position: relative;
     margin-bottom: 5rem;
 }
-.testimonial{
+
+.testimonial {
     padding-top: 2rem;
 }
-.avatar{
+
+.avatar {
     width: 6rem;
     height: 6rem;
     border-radius: 50%;
@@ -318,6 +324,51 @@ header {
     margin: 0 auto 1rem;
     border: 1rem solid var(--color-bg1);
 }
-.testimonial_info{
-    
+
+.testimonial_info {
+    text-align: center;
+
+}
+
+.testimonial_body {
+    background: var(--color-primary);
+    padding: 2rem;
+    margin-top: 3rem;
+    position: relative;
+}
+
+.testimonial_body::before {
+    content: " ";
+    display: block;
+    background: linear-gradient(135deg, transparent, var(--color-primary), var(--color-primary), var(--color-primary));
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    left: 50%;
+    top: -1.5rem;
+    transform: rotate(45deg);
+}
+/* footer */
+footer{
+    background:var(--color-bg1) ;
+    padding-top: 5rem;
+    font-size: 0.9rem;
+
+}
+.footer_container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 5rem;
+}
+.footer_container > div h4{
+    margin-bottom: 1.2rem;
+}
+.footer_1 p{
+    margin: 0 0 2rem;
+}
+.footer ul li{
+    margin-bottom: 0.7rem;
+}
+.footer ul li a:hover{
+    text-decoration: underline;
 }
