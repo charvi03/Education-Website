@@ -13,10 +13,9 @@ faqs.forEach((faq) => {
     faq.classList.toggle("open");
 
     //change icon
-    const icon = document.querySelector(".faq_icon i");
-    if (icon.className == "fa fa-plus") {
+    const icon = faq.querySelector(".faq_icon i");
+    if (icon.className === "fa fa-plus") {
       icon.className = "fa fa-minus";
-      l̥;
     } else {
       icon.className = "fa fa-plus";
     }
