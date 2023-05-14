@@ -217,26 +217,32 @@ header {
     margin: 2rem 0 1rem;
 
 }
-.category:nth-child(2) .category_icon{
+
+.category:nth-child(2) .category_icon {
     background-color: var(--color-danger);
 }
-.category:nth-child(3) .category_icon{
+
+.category:nth-child(3) .category_icon {
     background-color: var(--color-success);
 }
-.category:nth-child(4) .category_icon{
+
+.category:nth-child(4) .category_icon {
     background-color: var(--color-warning);
 }
-.category:nth-child(5) .category_icon{
+
+.category:nth-child(5) .category_icon {
     background-color: var(--color-primary);
 }
-.category:nth-child(6) .category_icon{
+
+.category:nth-child(6) .category_icon {
     background-color: var(--color-bg1);
 }
 
 .category p {
     font-size: 0.85rem;
 }
-.category_icon{
+
+.category_icon {
     background-color: var(--color-primary);
     padding: 0.7rem;
     border-radius: 0.9rem;
@@ -357,39 +363,65 @@ header {
     top: -1.5rem;
     transform: rotate(45deg);
 }
+
 /* footer */
-footer{
-    background:var(--color-bg1) ;
+footer {
+    background: var(--color-bg1);
     padding-top: 5rem;
     font-size: 0.9rem;
 
 }
-.footer_container{
+
+.footer_container {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 5rem;
 }
-.footer_container > div h4{
+
+.footer_container > div h4 {
     margin-bottom: 1.2rem;
 }
-.footer_1 p{
+
+.footer_1 p {
     margin: 0 0 2rem;
 }
-.footer ul li{
+
+.footer ul li {
     margin-bottom: 0.7rem;
 }
-.footer ul li a:hover{
+
+.footer ul li a:hover {
     text-decoration: underline;
 }
-.footer_socials{
+
+.footer_socials {
     display: flex;
     gap: 1rem;
     font-size: 1.2rem;
     margin-top: 2rem;
 }
-.footer_copyright{
+
+.footer_copyright {
     text-align: center;
     margin-top: 4rem;
     padding: 1.2rem 0;
     border-top: 1px solid var(--color-bg2);
+}
+
+@media screen and (max-width:1024px) {
+   .container{
+    width: var(--container-width-md);
+   }
+   h1{
+    font-size: 2.2rem;
+   }
+   h2{
+    font-size: 1.7rem;
+   }
+   h3{
+    font-size: 1.4rem;
+   }
+   h4{
+    font-size: 1.2rem;
+   }
 }
